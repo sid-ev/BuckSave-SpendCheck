@@ -36,7 +36,7 @@ public class ExpenseService {
         Category category = categoryRepository.findById(request.getCategoryId())
                 .orElseThrow(() -> new RuntimeException("Category not found"));
 
-        User user = userRepository.findById(2L) //Temp User with 1L
+        User user = userRepository.findById(1L) //Temp User with 1L
                 .orElseThrow(() -> new RuntimeException("User not found"));
 
 
